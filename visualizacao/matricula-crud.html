@@ -1,0 +1,95 @@
+<div class="col-md-11 col-md-offset-0.5" style="background-color: #DBDBDB">
+	<br/>
+	<form class="form-horizontal" id="formcad" > 
+	<fieldset>
+		<!-- Text input -->
+		<div class="form-group">
+			<label class="col-md-1 control-label" for="anosCombo">Ano: </label>
+			<div class="col-md-1">
+				<select id="anosCombo" name="anosCombo"></select>
+			</div>
+			<label for="cursosCombo" class="col-md-1 control-label">Curso: </label>
+  			<div class="col-md-8">
+    			<select id="cursosCombo" name="cursosCombo"></select>
+  			</div>
+  			
+		</div>
+		<!-- Text input -->
+		<div class="form-group">
+			<label for="turmasCombo" class="col-md-1 control-label">Turma: </label>
+  			<div class="col-md-4">
+    			<select id="turmasCombo" name="turmasCombo"></select>
+  			</div>
+  			<label for="disciplinasCombo" class="col-md-1 control-label">Disciplina: </label>
+  			<div class="col-md-4">
+    			<select id="disciplinasCombo" name="disciplinasCombo"></select>
+  			</div>
+			
+		</div>
+		<div class="form-group">
+  			<label for="turmasCombo" class="col-md-1 control-label">Professor: </label>
+  			<div class="col-md-8">
+    			<select id="professoresCombo" name="professoresCombo"></select>
+  			</div>
+			
+		</div>
+		<div class="form-group">
+			<label class="col-md-1 control-label" for="alunoid">Aluno: </label>
+			<div class="col-md-6">
+				<input id="alunoid" type="text" name="alunoid" placeholder="Digite o nome do aluno" class="form-control input-md" >
+				
+			</div>
+			<!-- Button (Double) -->
+			<div class="col-md-2">
+				<div id="btn-matricular" name="btn-matricular" class="btn btn-primary btn-send">Matricular</div>
+			</div>
+		</div>
+	</fieldset>
+ </form>
+<script>
+	$("#alunoid").autocomplete({
+    	source: alunosMatricula
+  	});	
+</script>
+<br/>
+</div>
+<br/>
+<!-- DATATABLES -->
+<div class="col-md-11 col-md-offset-0.5">
+    <h3>Matrículas
+    </h3>
+  </div>
+	<div class="col-md-11 col-md-offset-0.5">
+		<table id="tab" class="table table-striped table-bordered" cellspacing="0" width="100%">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Disciplina</th>
+					<th>Aluno</th>
+					<th>Professor</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+			<tbody>	</tbody>
+		</table>
+	</div>
+	<div class="modal fade" id="modal-formulario">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="form-titulo">Nova matrícula/Alterar matrícula</h4>
+					<button type="button" class="close" data-custom-dismiss='#modal-formulario'><span>x</span></button>
+				</div>
+				<div class="modal-body" id="formulario">
+					<!-- AQUI FICARÁ O jquery.load() -->
+					<span id="mensagem"></span>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-custom-dismiss='#modal-formulario'>Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+

@@ -1,0 +1,40 @@
+
+<div class="col-md-11 col-md-offset-0.5">
+    <h3>Ocorrências
+     <button id="btn-novo" class="btn btn-primary pull-right menu"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Nova ocorrência</button> 
+    </h3>
+  </div>
+
+	<div class="col-md-11 col-md-offset-0.5">
+		<table id="tab" class="table table-striped table-bordered" cellspacing="0" width="100%">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Data</th>
+					<th>Aluno</th>
+					<th>Descricao</th>
+					<th>Usuário</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+			<tbody>	</tbody>
+		</table>
+	</div>
+	<div class="modal fade" id="modal-formulario">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="form-titulo">Nova ocorrência/Alterar ocorrência</h4>
+					<button type="button" class="close" data-custom-dismiss='#modal-formulario'><span>x</span></button>
+				</div>
+				<div class="modal-body" id="formulario">
+					<!-- AQUI FICARÁ O jquery.load() -->
+					<span id="mensagem"></span>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-custom-dismiss='#modal-formulario'>Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+

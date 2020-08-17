@@ -1,0 +1,89 @@
+<form class="form-horizontal" id="formcad" enctype="multipart/form-data">
+	<fieldset>
+		<!-- Text input -->
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="matricula">Matrícula: </label>
+			<div class="col-md-3">
+				<input id="matricula" type="text" name="matricula" placeholder="Matricula" class="form-control input-md">
+			</div>
+			<label class="col-md-1 control-label" for="nome">Nome: </label>
+			<div class="col-md-6">
+				<input id="nome" type="text" name="nome" placeholder="Digite o nome do aluno" class="form-control input-md">
+			</div>
+		</div>
+		<!-- Text input -->
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="descricao">E-mail: </label>
+			<div class="col-md-4">
+				<input id="email" type="text" name="email" placeholder="Digite o email do aluno" class="form-control input-md">
+			</div>
+			<label for="nascimento" class="col-md-2 control-label">Nascimento: </label>
+  			<div class="col-md-4">
+    			<input class="form-control" type="date" id="nascimento" name="nascimento">
+  			</div>
+		</div>
+		<!-- Combos -->
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="cidadesCombo">Cidade: </label>
+			<div class="col-md-4">
+				<select id="cidadesCombo" name="cidadesCombo"></select>
+			</div>
+			<label class="col-md-1 control-label" for="bairrosCombo">Bairro: </label>
+			<div class="col-md-4">
+				<select id="bairrosCombo" name="bairrosCombo"></select>
+			</div>
+		</div>
+		<!-- File -->
+  		<div class="form-group">
+    		<label class="col-md-2 control-label" for="foto">Foto : </label>
+				<div class="col-md-8">
+    				<input type="file" class="form-control-file" id="foto" name="foto" accept="image/*">
+    			</div>
+  		</div>
+  		<!-- radio -->
+  		<div class="form-group">
+  		<label class="col-md-2 control-label" for="bairrosCombo">Repetente: </label>
+			<div class="col-md-8">
+  				<input class="form-check-input" type="radio" name="repetente" id="repetente1" value=1>&nbsp;Sim
+  				<input class="form-check-input" type="radio" name="repetente" id="repetente0" value=0 checked="checked">&nbsp;Não
+			</div>
+		</div>
+		<!-- Telefones -->
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="ddd">Adicionar telefones: </label>
+			<div class="col-md-2">
+				<input id="ddd" type="text" name="ddd" placeholder="ddd" class="form-control input-md" size="2" maxlength="2">
+			</div>
+			<div class="col-md-3">
+				<input id="telefone" type="text" name="telefone" placeholder="telefone" class="form-control input-md" size="9" maxlength="9">
+			</div>
+			<div class="col-md-1">
+				<div id="btn-add" name="btn-add" class="btn btn-primary">+</div>
+			</div>
+			<div class="col-md-2">
+				<section class="container">
+					<table id="tblTelefones" border="2">
+						<thead>
+							<tr><TH>ddd</TH><TH>telefone</TH</tr>
+						</thead>
+						<tbody id="corpoTelefones">
+						</tbody>
+					</table>
+				</section>
+			</div>
+		</div>
+
+		<!-- textArea -->
+		<div class="form-group">
+    		<label class="col-md-2 control-label" for="problema_saude">Problemas de Saúde: </label>
+    		<div class="col-md-8">
+    			<textarea class="form-control" id="problema_saude" name="problema_saude" rows="3"></textarea>
+    		</div>
+    		<!-- Button (Double) -->
+    		<div class="col-md-2">
+				<div id="btn-alterar" name="btn-alterar" class="btn btn-primary btn-send">Enviar</div>
+			</div>
+  		</div>
+	</fieldset>
+</form>
+

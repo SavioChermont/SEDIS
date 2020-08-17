@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Login</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../bibliotecas/css/bootstrap.min.css">
+        <!-- CSS -->
+        <link href="css/login.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <center>
+            <div class='header-box'>
+                <h1>Carômetro</h1>
+            </div>
+            <!--
+            <div class="erro">
+                Aqui vc colca seu back-end: if(erro)
+                    <div class="alert alert-danger">Mensagem de erro</div>
+                endif
+            </div>
+        -->
+
+
+            <form action="" method="post" class="form-login">
+                <label>Usuário:</label>
+                <input type="text" class="form-control" id="login" name="login" value=""/>
+                <label>Senha:</label>
+                <input type="password" class="form-control" id="senha" name="senha" />
+                <br>
+                <input id="Blogin" value="Login" class="btn btn-primary btn-block btn-send">
+            </form>
+        </center>
+    </body>
+
+     <script type="text/javascript" src="../bibliotecas/js/jquery-3.3.1.js"></script>
+     <script src="./js/_configuracoesGerais.js"></script>
+     <script src="./js/login-usuario.js"></script>
+     <script src="./js/verificar-sessao.js"></script> 
+</html>
